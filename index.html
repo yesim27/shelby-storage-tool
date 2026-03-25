@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shelby Storage Demo</title>
+</head>
+<body style="text-align:center;margin-top:50px;">
+  <h1>Shelby Storage Demo</h1>
+  <button onclick="upload()">Upload</button>
+  <p id="status"></p>
+
+  <script>
+    function upload() {
+      document.getElementById("status").innerText = "Uploading...";
+      setTimeout(() => {
+        document.getElementById("status").innerText = "Stored on Shelby (simulated)";
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
